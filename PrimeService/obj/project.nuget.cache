@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/E7hjEIPMQvMxsvNAeMV7F6BRlXH5A2H1TZRHb+yOXIGHuN+7S/Am39tZxpi8shczPvWesnTk6GO/zvhJJJqIw==",
+  "success": true,
+  "projectFilePath": "/home/zetademon/Documents/SE/xunit-testing/PrimeService/PrimeService.csproj",
+  "expectedPackageFiles": [
+    "/home/zetademon/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
