@@ -5,13 +5,21 @@ namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould
     {
-        [Fact]
-        public void IsPrime_InputIs1_ReturnFalse()
+        private readonly PrimeService _primeService;
+        public PrimeService_IsPrimeShould()
         {
-            var primeService = new PrimeService();
-            bool result = primeService.IsPrime(1);
+           _primeService = new PrimeService();
+        }
 
-            Assert.False(result, "1 should not be prime");
+        [Theory] //represents a suite of tests that execute the same code, but have differnet inputs
+        [InlineData(-1)] //represents different inputs
+        [InlineData(0)]
+        [InlineData(1)]
+        public void IsPrime_ValuesLessThan2_ReturnFalse(int value)
+        {
+            var result = _primeService.IsPrime(value);
+
+            Assert.False(result, $"{value} should not be prime");
         }
     }
 }
